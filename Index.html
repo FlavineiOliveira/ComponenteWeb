@@ -1,0 +1,45 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Switch #02</title>
+
+        <link href="css/estilo.css" rel="stylesheet">
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    </head>
+    <body>
+        
+        <h1 class="fonte-padrao fonte-titulo">Switch</h1>
+
+        <div class="switch">
+
+            <div class="switch-control">
+
+            </div>
+
+            <input class="check-switch" type="checkbox" hidden />
+
+        </div>
+
+        <script>
+         
+         $(".switch").click(function (e){
+            
+            var controleSwtich = $(e.currentTarget).find('.switch-control');
+
+            var controleCheck = $(e.currentTarget).find('.check-switch'); 
+
+            $('.check-switch').prop( "checked", !$('.check-switch').prop( "checked") );
+
+            if($('.check-switch').prop( "checked"))
+                $(controleSwtich).animate({marginLeft: "28px"});
+            else{
+                $(controleSwtich).animate({marginLeft: "2px"});
+            }
+            
+         });
+            
+        </script>
+    </body>
+</html>

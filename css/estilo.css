@@ -1,0 +1,28 @@
+.fonte-padrao{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.fonte-titulo{
+  font-size: large;
+}
+
+/* INICIO Switch*/
+
+.switch{
+  float: left;
+  width: 50px;
+  height: 25px;
+  border-radius: 15px;
+  background-color: blue;
+}
+
+.switch-control{
+  margin: 2px;
+  float: left;
+  background-color: red;
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+}
+
+/* FIM Switch*/
